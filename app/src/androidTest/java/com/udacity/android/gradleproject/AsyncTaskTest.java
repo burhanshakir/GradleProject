@@ -40,5 +40,7 @@ public class AsyncTaskTest{
         }
         if (joke.equals("connect timed out"))
             fail("Timed out");
+
+        if (joke.equals(null)) throw new AssertionError("Joke cannot be null");
     }
 }
